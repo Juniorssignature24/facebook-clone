@@ -1,0 +1,837 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+
+
+main {
+  display: grid;
+  grid-template-columns: 25vw 50vw 25vw;
+  grid-template-rows: 10vh 90vh;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header-div {
+  width: 95vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-input {
+  align-items: center;
+  display: flex;
+  /* padding: 15px; */
+  width: 20vw;
+
+  /* justify-content: space-around; */
+}
+
+.logo-input .bi-facebook {
+  color: #039be5;
+}
+
+.logo-input .bi-search {
+  position: relative;
+  left: 15%;
+  color: #555;
+}
+
+.logo-input .search {
+  width: 200px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  padding: 0px 40px;
+  background-color: #eee;
+  margin-left: 10px;
+}
+
+.next-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 1s;
+  width: 45vw;
+  height: 10vh;
+}
+
+.next-div div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10vw;
+  height: inherit;
+}
+
+.next-div div:hover {
+  background-color: #eee;
+}
+
+.next-div .Home {
+  border-bottom: 4px solid #039be5;
+}
+
+.next-div .logos {
+  color: #039be5;
+}
+
+.next-div div:hover {
+  cursor: pointer;
+}
+
+.next-div .logo {
+  color: #555;
+}
+
+.after-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20vw;
+}
+
+.after-div .bi {
+  background-color: #eee;
+  color: #000;
+  /* font-size: 10px; */
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.after-div .bis {
+  background-color: #eee;
+  color: #000;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.bi-plus-lg {
+  display: none;
+}
+
+.left {
+  background-color: #eee;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-top: 20px;
+  height: 90vh;
+}
+
+.left-main {
+  overflow-y: scroll;
+  height: 90vh;
+  overflow-x: hidden;
+}
+
+.left-main::-webkit-scrollbar {
+  background-color: gray;
+  width: 10px;
+  border-radius: 10px;
+}
+
+.left-main::-webkit-scrollbar-button {
+  background-color: #0000ff;
+}
+
+.left-main::-webkit-scrollbar-thumb:hover {
+  background-color: #2b2929;
+  width: 10px;
+  height: 10px;
+}
+
+/* bihf6238 */
+/* ::-webkit-scrollbar {
+  width: 10px;
+  height: 20px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+} */
+.left-div {
+  width: 15vw;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+}
+
+.left-div span {
+  font-size: 14px;
+  margin-left: 5px;
+  font-family: arial;
+  font-weight: bold;
+  justify-content: space-around;
+}
+
+.center {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: #eee;
+}
+
+.center::-webkit-scrollbar {
+  width: 10px;
+}
+
+.center-div {
+  width: 50vw;
+  height: 200vh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.center-x-overflow {
+  width: 50vw;
+  height: 50vh;
+  display: grid;
+  place-items: center;
+  overflow-x: auto;
+}
+
+.center-x-overflow::-webkit-scrollbar {
+  width: 10px;
+}
+
+.stories-div {
+  width: 125vw;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.story-x {
+  width: 15vw;
+  height: 45vh;
+  border-radius: 20px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  background-image: url(img/Ethnic\ Businesswoman\ with\ Folded\ Arms\ Stock\ Image\ -\ Image\ of\ professional\,\ person_\ 12257013.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+/* <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/user-male-circle.png" alt="user-male-circle" /> */
+.story-1 {
+  width: 15vw;
+  height: 45vh;
+  border-radius: 20px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: gray;
+}
+
+.story-1:hover {
+  background-image: url(img/Ethnic\ Businesswoman\ with\ Folded\ Arms\ Stock\ Image\ -\ Image\ of\ professional\,\ person_\ 12257013.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  ;
+}
+
+.story-2:hover {
+  background-image: url(img/Ethnic\ Businesswoman\ with\ Folded\ Arms\ Stock\ Image\ -\ Image\ of\ professional\,\ person_\ 12257013.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+.story-3:hover {
+  background-image: url(img/Ethnic\ Businesswoman\ with\ Folded\ Arms\ Stock\ Image\ -\ Image\ of\ professional\,\ person_\ 12257013.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+.story-4:hover {
+  background-image: url(img/Ethnic\ Businesswoman\ with\ Folded\ Arms\ Stock\ Image\ -\ Image\ of\ professional\,\ person_\ 12257013.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+.story-5:hover {
+  background-image: url(img/Ethnic\ Businesswoman\ with\ Folded\ Arms\ Stock\ Image\ -\ Image\ of\ professional\,\ person_\ 12257013.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+.story-6:hover {
+  background-image: url(img/Ethnic\ Businesswoman\ with\ Folded\ Arms\ Stock\ Image\ -\ Image\ of\ professional\,\ person_\ 12257013.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+.story-7:hover {
+  background-image: url(img/Ethnic\ Businesswoman\ with\ Folded\ Arms\ Stock\ Image\ -\ Image\ of\ professional\,\ person_\ 12257013.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+.story-1 img {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  border: 2px solid blue;
+}
+
+.story-1 p {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.story-2 {
+  width: 15vw;
+  height: 45vh;
+  border-radius: 20px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #039be5;
+}
+
+.story-2 img {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  border: 2px solid blue;
+}
+
+.story-2 p {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.story-3 {
+  width: 15vw;
+  height: 45vh;
+  border-radius: 20px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: burlywood;
+}
+
+.story-3 img {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  border: 2px solid blue;
+}
+
+.story-3 p {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.story-4 {
+  width: 15vw;
+  height: 45vh;
+  border-radius: 20px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: red;
+}
+
+.story-4 img {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  border: 2px solid blue;
+}
+
+.story-4 p {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.story-5 {
+  width: 15vw;
+  height: 45vh;
+  border-radius: 20px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: aqua;
+}
+
+.story-5 img {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  border: 2px solid blue;
+}
+
+.story-5 p {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.story-6 {
+  background-color: #039be5;
+  width: 15vw;
+  height: 45vh;
+  border-radius: 20px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.story-6 img {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  border: 2px solid blue;
+}
+
+.story-6 p {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.story-7 {
+  background-color: green;
+  width: 15vw;
+  height: 45vh;
+  border-radius: 20px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.story-7 img {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  border: 2px solid blue;
+}
+
+.story-7 p {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+.left-div .div {
+  display: none;
+}
+
+.dropdown {
+  position: relative;
+  margin-top: 3px;
+  width: 100px;
+  height: 50px;
+}
+
+.dropdown::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 10000;
+  width: 6px;
+  height: 6px;
+  border: 2px solid #000;
+  border-top: 2px solid #eee;
+  border-right: 2px solid #eee;
+  transform: rotate(-45deg);
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.dropdown.active::before {
+  transform: rotate(-225deg);
+  top: 25px;
+}
+
+.dropdown.active .option {
+  display: block;
+}
+
+.dropdown input {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  border: none;
+  width: 6vw;
+  height: 5vh;
+  padding: 12px 30px;
+  border-radius: 10px;
+  background-color: #eee;
+  color: #000;
+  cursor: pointer;
+}
+
+.dropdown input:focus {
+  outline: none;
+}
+
+.dropdown input::placeholder {
+  color: #000;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.dropdown .option {
+  position: absolute;
+  top: 40px;
+  width: 18vw;
+  /* left: 15px; */
+  display: none;
+}
+
+.dropdown .option div {
+  padding: 12px 8px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+
+.dropdown .option div:hover {
+  background-color: #039be5;
+  color: #fff;
+}
+
+.dropdown .option div ion-icon {
+  position: relative;
+  top: 4px;
+  font-size: 1.2em;
+}
+
+/* what's on your mind */
+.row {
+  width: 40vw;
+  height: 20vh;
+  background-color: #fff;
+  display: grid;
+  place-items: center;
+  box-shadow: 1px 2px 2px #555;
+  border-radius: 10px;
+  /* margin-top: -40%; */
+}
+
+.col-1 {
+  width: 35vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.col-1 input {
+  display: inline-block;
+  width: 40vw;
+  height: 8vh;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  background-color: #eee;
+  margin-left: 5px;
+  color: #000;
+}
+
+.col-1 input::placeholder {
+  color: #555;
+}
+
+.col-1 .bi-person-circle {
+  font-size: 40px;
+  /* display: inline-block; */
+  color: #333;
+}
+
+.center-div hr {
+  /* margin-bottom: 10px; */
+  width: 80%;
+}
+
+body {
+  background-color: #eee;
+}
+
+.col-2 {
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.col-2 span {
+  margin-left: 10px;
+}
+
+.col-2 div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.google-ads {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40vw;
+  height: 90vh;
+  background-color: #fff;
+  flex-direction: column;
+  box-shadow: 1px 2px 2px #555;
+  margin-top: 8%;
+}
+
+.globe-sponsor-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 
+.auto {
+  width: 38vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+} */
+
+.sponsored {
+  left: 50px;
+  top: -15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.google-ads-down-div {
+  /* border: 1px solid salmon; */
+  width: 35vw;
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.google-ads-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38vw;
+  height: 70vh;
+  /* border: 1px solid #ff0000; */
+}
+
+.background {
+  background-image: url(img/office.avif);
+  height: 40vh;
+  width: 35vw;
+  display: flex;
+  /* justify-content: space-around; */
+  /* border: 1px solid salmon; */
+}
+
+.background img {
+  position: relative;
+  top: -2%;
+}
+
+.column {
+  position: relative;
+  top: -2px;
+  height: 20vh;
+  width: 35vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.col-3 {
+  width: 17.5vw;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-3 button {
+  width: 140px;
+  height: 40px;
+  background-color: blue;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.sponsored-details {
+  margin-top: 10px;
+  background-color: #fff;
+  width: 15vw;
+  height: 18vh;
+  border-radius: 8px;
+}
+
+.spons {
+  margin: 10px;
+}
+
+.spons div {
+  background-color: #eee;
+  width: 13vw;
+  height: 2vh;
+  border-radius: 8px;
+  margin: 10px 0px;
+}
+
+
+/* right side */
+
+.right {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  height: 90vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 23vw;
+}
+
+.right::-webkit-scrollbar {
+  width: 10px;
+}
+
+.right-y-overflow {
+  height: 200vh;
+  width: 23vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.right-div {
+  width: 21vw;
+  height: 190vh;
+}
+
+.fr-rq {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 19vw;
+  height: 10vh;
+}
+
+.name-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: inherit;
+  flex-direction: column;
+}
+
+.name {
+  width: 16vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.Confirm-btn {
+  width: 16vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px;
+}
+
+.top-rt {
+  width: 21vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.birth {
+  width: 18vw;
+}
+
+.con {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 21vw;
+}
+
+.con-list {
+  display: flex;
+  align-items: center;
+}
